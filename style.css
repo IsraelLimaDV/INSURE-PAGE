@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+
+/* font-family: 'DM Serif Display', serif;
+font-family: 'Karla', sans-serif; */
+
+
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+
+/* CONFIGURAÇÕES HEADER DESKTOP */
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.6rem;
+    color: hsl(273, 4%, 51%);
+    font-weight: 700;
+    padding: 15px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+header img{
+    height: 12px;
+    align-self: center;
+    padding-left: 22px;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.menu-items li {
+    margin-right:15px; 
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu-items li:hover{
+    color:black;
+}
+
+#btn-plans{
+    color: black;
+    border: 1px solid black;
+    padding: 6px 17px;
+    cursor: pointer;
+}
+
+#btn-plans:hover{
+    color: white;
+    background-color: black;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+
+
+/* CONFIGURAÇÕES SECTION INTRO DESKTOP */
+
+
+.container-intro{
+    width: 100vw;
+    height: 80vh;
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    font-family: 'Karla', sans-serif;
+}
+
+.main-content{
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.intro-text:after{
+    content: "";
+    position: absolute;
+    border: solid white 1px;
+    width: 145px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.intro-text h1{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 4.3rem;
+    line-height: 4rem;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.intro-text p{
+    color: hsl(0, 0%, 85%);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    padding-right: 15px;
+}
+
+.intro-text button{
+    font-size: 0.55rem;
+    max-width: 120px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: hsl(256, 26%, 20%);
+    border: white solid 1px;
+    color:white;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.intro-text button:hover{
+    color: black;
+    background-color: white;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+
+.intro-img-family{
+    margin-top: 80px;
+    margin-right: 40px;
+}
+
+.intro-img-family img{
+    max-width: 455px;
+}
+
+.intro-img-family-mobile{
+    display: none;
+}
+
+.bg-img{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#bg-img-left{
+    align-self: flex-end;
+    margin-top: 375px;
+    width: 15%;
+    z-index: 0;
+}
+
+#bg-img-right{
+    width: 25%;
+    height: 15%;
+    margin-top: 56px;
+    z-index: 0;
+}
+
+/* CONFIGURAÇÕES HEADER MOBILE */
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-img-family{
+    display: none;
+}
+
+.intro-img-family-mobile{
+    display: block;
+}
+
+
+/* CONFIGURAÇÕES SECTION SPECS */
+
+
+.specs{
+    margin-top: 290px;
+    color:  hsl(270, 9%, 17%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.specs:before{
+    content: "";
+    border: none;
+    border-top: 1px solid  hsl(273, 4%, 51%);
+    width: 145px;
+    margin-bottom: 50px;
+    margin-left: -870px;
+}
+
+.specs h2{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4.3rem;
+    font-weight: 400;
+    margin-left: -570px;
+}
+
+.specs-items-list{
+    display: flex;
+    max-width: 80vw;
+    justify-content: space-between;
+    margin-left: 70px;
+}
+
+.specs-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 190px;
+    width: 350px;
+    margin-top: 50px;
+    margin-right: 35px;
+}
+
+.specs-item img{
+    width: 70px;
+}
+
+.specs-item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.specs-item-text h4{
+    font-family: 'DM Serif Display', serif;
+    color: hsl(270, 9%, 17%);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.specs-item-text p{
+    color:  hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+}   
+
+
+/* CONFIGURAÇÕES SECTION FIND OUT MORE */
+
+
+.find-out-more{
+    width: 75vw;
+    height: 200px;
+    background-color: hsl(256, 26%, 20%);
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 140px;
+    padding: 80px;
+    background-image: url('./images/bg-pattern-how-we-work-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+.find-out-more h2{
+    font-family: 'DM Serif Display', serif;
+    font-size:3rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.find-out-more button{
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 12px 35px;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.find-out-more button:hover{
+    color: hsl(256, 26%, 20%);
+    background-color: white;
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+
+
+/* CONFIGURAÇÕES DO FOOTER */
+
+
+footer{
+    background-color: hsl(0, 0%, 98%);
+    background-image: url('./images/bg-pattern-footer-desktop.svg');
+    background-repeat: no-repeat;
+    background-size:auto;
+    margin-bottom: 30px;
+}
+
+.footer-content{
+    width: 75vw;
+    margin: 0 auto;
+}
+
+.media-icons img{
+    margin-right: 10px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.media-icons img:hover{
+    filter:brightness(0%);
+    transition: ease-in-out 200ms;
+}
+
+.footer-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    margin-bottom:85px;
+    position: relative;
+}
+
+.footer-header::after{
+    content: "";
+    border-bottom: solid 1px lightgray;
+    position: absolute;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.footer-body{
+    display: flex;
+    gap: 195px;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding-bottom: 70px;;
+}
+
+.footer-body-title{
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.footer-body-items{
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.footer-body-items:hover{
+    text-decoration: underline;
+}
